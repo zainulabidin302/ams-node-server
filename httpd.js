@@ -10,6 +10,7 @@ var upload = multer({ dest: "uploads/" });
 const MongoClient = require("mongodb").MongoClient;
 const ObjectId = require("mongodb").ObjectId;
 
+console.log(config)
 app.use("/public", express.static(path.join(__dirname, "uploads")));
 app.use("/", express.static(path.join(__dirname, "public")));
 let db = () => {
