@@ -19,7 +19,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "source ./setenvvars.sh && nodemon index.js"
+    "start": "node index.js",
+    "dev": "source ./setenvvars.sh && nodemon index.js"
   },
   "author": "",
   "license": "ISC"
