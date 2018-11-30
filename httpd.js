@@ -340,6 +340,8 @@ app.get("/courses/titles", (req, res) => {
 //   res.writeHead(400);
 //   res.send("Not found");
 // });
-app.listen(config.http_port, config.http_hostname, () => {
-  console.log(`HTTP Server is listening on port ${config.http_port}`);
-});
+module.exports = { startServer: function() {
+	app.listen(config.http_port, config.http_hostname, () => {
+	  console.log(`HTTP Server is listening on port ${config.http_port}`);
+	});
+}}
