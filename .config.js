@@ -7,7 +7,7 @@ module.exports = {
   port: 993,
   tls: true,
 
-  http_port: 3000,
+  http_port: process.env.PORT,
   http_hostname: "0.0.0.0",
   defaultFolder: "INBOX",
   mongoconstring: process.env.MONGO_CON_STRING,
